@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,15 @@
 		8BF62B182677AA6500196212 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BF62B172677AA6500196212 /* Preview Assets.xcassets */; };
 		8BF62B232677AA6600196212 /* CovidCasesUKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF62B222677AA6600196212 /* CovidCasesUKTests.swift */; };
 		8BF62B2E2677AA6600196212 /* CovidCasesUKUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF62B2D2677AA6600196212 /* CovidCasesUKUITests.swift */; };
+		8BF62B3F2677AB8100196212 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF62B3E2677AB8100196212 /* Network.swift */; };
+		8BF62B422677AB9600196212 /* Case.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF62B412677AB9600196212 /* Case.swift */; };
+		8BF62B452677B35F00196212 /* CasesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF62B442677B35F00196212 /* CasesController.swift */; };
+		8BF62B482677BBFE00196212 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF62B472677BBFE00196212 /* Date.swift */; };
+		8BF62B4B2677C80B00196212 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF62B4A2677C80B00196212 /* NotificationController.swift */; };
+		9E2400F2267E49C60077ED54 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2400F1267E49C60077ED54 /* SettingsView.swift */; };
+		9E2400F4267E4C8D0077ED54 /* PersistentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2400F3267E4C8D0077ED54 /* PersistentData.swift */; };
+		9E4BDDAF267F2B5D00015F1A /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 9E4BDDAE267F2B5D00015F1A /* SwiftUICharts */; };
+		9E4BDDB2267F2B7E00015F1A /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4BDDB1267F2B7E00015F1A /* Chart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +54,14 @@
 		8BF62B292677AA6600196212 /* CovidCasesUKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CovidCasesUKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BF62B2D2677AA6600196212 /* CovidCasesUKUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidCasesUKUITests.swift; sourceTree = "<group>"; };
 		8BF62B2F2677AA6600196212 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BF62B3E2677AB8100196212 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		8BF62B412677AB9600196212 /* Case.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Case.swift; sourceTree = "<group>"; };
+		8BF62B442677B35F00196212 /* CasesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasesController.swift; sourceTree = "<group>"; };
+		8BF62B472677BBFE00196212 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		8BF62B4A2677C80B00196212 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		9E2400F1267E49C60077ED54 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		9E2400F3267E4C8D0077ED54 /* PersistentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentData.swift; sourceTree = "<group>"; };
+		9E4BDDB1267F2B7E00015F1A /* Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E4BDDAF267F2B5D00015F1A /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,10 +113,14 @@
 		8BF62B0F2677AA6400196212 /* CovidCasesUK */ = {
 			isa = PBXGroup;
 			children = (
-				8BF62B102677AA6400196212 /* CovidCasesUKApp.swift */,
-				8BF62B122677AA6400196212 /* ContentView.swift */,
-				8BF62B142677AA6500196212 /* Assets.xcassets */,
+				8BF62B492677C7FC00196212 /* Notification */,
+				8BF62B462677BBEE00196212 /* Extension */,
+				8BF62B432677B35400196212 /* Controller */,
+				8BF62B402677AB8900196212 /* Model */,
 				8BF62B192677AA6500196212 /* Info.plist */,
+				8BF62B3D2677AAEE00196212 /* App */,
+				8BF62B3C2677AAE300196212 /* Views */,
+				8BF62B3B2677AADC00196212 /* Network */,
 				8BF62B162677AA6500196212 /* Preview Content */,
 			);
 			path = CovidCasesUK;
@@ -130,6 +152,91 @@
 			path = CovidCasesUKUITests;
 			sourceTree = "<group>";
 		};
+		8BF62B3B2677AADC00196212 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8BF62B3E2677AB8100196212 /* Network.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		8BF62B3C2677AAE300196212 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9E4BDDB0267F2B7100015F1A /* Components */,
+				9E4BDDAC267E6BFF00015F1A /* Main */,
+				9E2400F0267E496B0077ED54 /* Settings */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		8BF62B3D2677AAEE00196212 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8BF62B102677AA6400196212 /* CovidCasesUKApp.swift */,
+				8BF62B142677AA6500196212 /* Assets.xcassets */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8BF62B402677AB8900196212 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8BF62B412677AB9600196212 /* Case.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8BF62B432677B35400196212 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8BF62B442677B35F00196212 /* CasesController.swift */,
+				9E2400F3267E4C8D0077ED54 /* PersistentData.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8BF62B462677BBEE00196212 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8BF62B472677BBFE00196212 /* Date.swift */,
+			);
+			name = Extension;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		8BF62B492677C7FC00196212 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				8BF62B4A2677C80B00196212 /* NotificationController.swift */,
+			);
+			name = Notification;
+			sourceTree = "<group>";
+		};
+		9E2400F0267E496B0077ED54 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				9E2400F1267E49C60077ED54 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		9E4BDDAC267E6BFF00015F1A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8BF62B122677AA6400196212 /* ContentView.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		9E4BDDB0267F2B7100015F1A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9E4BDDB1267F2B7E00015F1A /* Chart.swift */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +253,9 @@
 			dependencies = (
 			);
 			name = CovidCasesUK;
+			packageProductDependencies = (
+				9E4BDDAE267F2B5D00015F1A /* SwiftUICharts */,
+			);
 			productName = CovidCasesUK;
 			productReference = 8BF62B0D2677AA6400196212 /* CovidCasesUK.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +327,9 @@
 				Base,
 			);
 			mainGroup = 8BF62B042677AA6400196212;
+			packageReferences = (
+				9E4BDDAD267F2B5D00015F1A /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
 			productRefGroup = 8BF62B0E2677AA6400196212 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,8 +372,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E4BDDB2267F2B7E00015F1A /* Chart.swift in Sources */,
 				8BF62B132677AA6400196212 /* ContentView.swift in Sources */,
+				9E2400F2267E49C60077ED54 /* SettingsView.swift in Sources */,
+				8BF62B482677BBFE00196212 /* Date.swift in Sources */,
+				9E2400F4267E4C8D0077ED54 /* PersistentData.swift in Sources */,
+				8BF62B452677B35F00196212 /* CasesController.swift in Sources */,
+				8BF62B4B2677C80B00196212 /* NotificationController.swift in Sources */,
+				8BF62B422677AB9600196212 /* Case.swift in Sources */,
 				8BF62B112677AA6400196212 /* CovidCasesUKApp.swift in Sources */,
+				8BF62B3F2677AB8100196212 /* Network.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,6 +701,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9E4BDDAD267F2B5D00015F1A /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9E4BDDAE267F2B5D00015F1A /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9E4BDDAD267F2B5D00015F1A /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8BF62B052677AA6400196212 /* Project object */;
 }

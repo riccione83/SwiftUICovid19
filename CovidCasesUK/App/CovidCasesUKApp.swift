@@ -9,8 +9,11 @@ import SwiftUI
 
 @main
 struct CovidCasesUKApp: App {
+
     var body: some Scene {
+        
         WindowGroup {
+            
             ContentView()
         }
     }
