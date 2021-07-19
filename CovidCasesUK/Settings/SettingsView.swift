@@ -10,8 +10,9 @@ import SwiftUI
 struct SettingsView: View {
     @State private var isNotificationEnable = false
     @State private var notificationDate = Date()
+    @State private var areaName: String = ""
     private let notification = NotificationController()
-    private let options = OptionsData()
+    let options: OptionsData
     
     var body: some View {
         Form {
@@ -40,11 +41,48 @@ struct SettingsView: View {
                     self.notification.setUpLocalNotification(notificationDate)
                 }
             })
+            Section(header: Text("Area"), content: {
+                TextField("England, Bromley, ...", text: $areaName)
+                    .modifier(ClearButton(text: $areaName))
+                    .font(.system(size: 18))
+             
+                
+            })
+            .onChange(of: areaName, perform: { value in
+                self.options.saveAreaName(value.trimmingCharacters(in: .whitespacesAndNewlines))
+            })
         }
         .navigationBarTitle(Text("Settings")).font(.largeTitle)
         .onAppear(perform: {
             self.isNotificationEnable = options.isNotificationEnabled()
             self.notificationDate = options.getNotificationTime() ?? Date()
+            self.areaName = options.getAreaName() ?? ""
         })
+    }
+}
+
+struct ClearButton: ViewModifier
+{
+    @Binding var text: String
+
+    public func body(content: Content) -> some View
+    {
+        HStack
+        {
+            content
+
+            if !text.isEmpty
+            {
+                Button(action:
+                {
+                    self.text = ""
+                })
+                {
+                    Image(systemName: "delete.left")
+                        .foregroundColor(Color(UIColor.opaqueSeparator))
+                }
+                .padding(.trailing, 8)
+            }
+        }
     }
 }

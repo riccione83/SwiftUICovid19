@@ -10,8 +10,6 @@ import Foundation
 
 class OptionsData {
     
-    
-    
     init() {
         
     }
@@ -33,5 +31,13 @@ class OptionsData {
             return date
         }
         return nil
+    }
+    
+    func getAreaName() -> String? {
+        return UserDefaults().string(forKey: "uk.cases.area.name")
+    }
+ 
+    func saveAreaName(_ area: String) {
+        UserDefaults().set(area, forKey: "uk.cases.area.name")
     }
 }

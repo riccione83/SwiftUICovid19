@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "36A8FF05-C7CC-4F88-A3E4-F6A1E9200DD2"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CFE47781-4930-4C27-841E-B40EFFD8990D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CovidCasesUK/Network.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "buildURL(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D4575152-9BCC-46CF-BF93-9536ABF81C82"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CovidCasesUK/Controller/CasesController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "refreshData(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D4575152-9BCC-46CF-BF93-9536ABF81C82 - d7203d7156b67ea1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;CovidCasesUK.UKCases&gt;) -&gt; () in CovidCasesUK.CasesController.refreshData(Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "CovidCasesUK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/machinemax/Documents/CovidCasesUK/CovidCasesUK/Controller/CasesController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "951">
+               </Location>
+               <Location
+                  uuid = "D4575152-9BCC-46CF-BF93-9536ABF81C82 - ccbfd7adb9bb20"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (CovidCasesUK.Data) -&gt; Swift.Bool in closure #1 (Swift.Optional&lt;CovidCasesUK.UKCases&gt;) -&gt; () in CovidCasesUK.CasesController.refreshData(Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "CovidCasesUK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/machinemax/Documents/CovidCasesUK/CovidCasesUK/Controller/CasesController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "110">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9E660CB4-A508-412A-A62A-474135606892"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CovidCasesUK/Controller/CasesController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "refreshData(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9E660CB4-A508-412A-A62A-474135606892 - d7203d7156b67e80"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;CovidCasesUK.UKCases&gt;) -&gt; () in CovidCasesUK.CasesController.refreshData(Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "CovidCasesUK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/machinemax/Documents/CovidCasesUK/CovidCasesUK/Controller/CasesController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "1676">
+               </Location>
+               <Location
+                  uuid = "9E660CB4-A508-412A-A62A-474135606892 - 920b8e0e5b720d00"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (CovidCasesUK.Data) -&gt; Swift.Bool in closure #1 (Swift.Optional&lt;CovidCasesUK.UKCases&gt;) -&gt; () in CovidCasesUK.CasesController.refreshData(Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "CovidCasesUK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/machinemax/Documents/CovidCasesUK/CovidCasesUK/Controller/CasesController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "110">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
